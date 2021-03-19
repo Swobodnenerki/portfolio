@@ -38,6 +38,7 @@ export const MenuItem = styled.li`
 
 export const MenuLink = styled(Link)`
     color: white;
+    /* color: ${({navbar}) => (navbar ? 'white' : '#3D23DD')}; zmaiana koloru tekstu*/
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -50,6 +51,7 @@ export const MenuLink = styled(Link)`
     transition: color 0.3s ease;
     &.active{
         border-bottom: 3px solid #de354c;
+        border-bottom: ${({navbar}) => (navbar ? '3px solid #ffffff' : '3px solid #3D23DD')};
     }
     &:hover{
         transition: color 0.3s ease;

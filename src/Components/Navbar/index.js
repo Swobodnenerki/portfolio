@@ -21,10 +21,9 @@ function Navbar( {toggle} ){
         <MaxWidth>
           <Logo navbar={navbar}>Filip Kozak</Logo>
           <Menu>
-            <MenuItem><MenuLink to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Home</MenuLink></MenuItem>
-            <MenuItem><MenuLink to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</MenuLink></MenuItem>
-            <MenuItem><MenuLink to='projects'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</MenuLink></MenuItem>
-            <MenuItem><MenuLink>Skils</MenuLink></MenuItem>
+            <MenuItem><MenuLink navbar={navbar} to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Home</MenuLink></MenuItem>
+            <MenuItem><MenuLink navbar={navbar} to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</MenuLink></MenuItem>
+            <MenuItem><MenuLink navbar={navbar} to='projects'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</MenuLink></MenuItem>
             <MenuItem><MenuLink>Passions</MenuLink></MenuItem>
             <MenuItem><MenuLink>Contact</MenuLink></MenuItem>
           </Menu>
