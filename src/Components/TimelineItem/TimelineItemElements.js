@@ -4,7 +4,7 @@ export const TimelineItemContainer = styled.div`
     display: flex;
     background-color: purple;
     justify-content: flex-end;
-    padding-right: 30px;
+    padding-left: 200px;
     margin: 10px 0;
     width: 50%;
 `

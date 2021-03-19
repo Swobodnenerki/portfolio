@@ -9,6 +9,15 @@ const data = [
         
     },
     {
+        text: 'High school graduate',
+        date: '2017',
+        category :{
+            tag: 'medium',
+            color: '#018f69'
+        },
+        
+    },
+    {
         text: 'JoyFinder',
         date: '2020',
         category:{
