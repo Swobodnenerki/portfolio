@@ -3,6 +3,8 @@ import {Link} from 'react-scroll';
 
 export const Nav = styled.nav`
     position: fixed;
+    top: 0;
+    z-index: 500; //wyzej
     width: 100%;
     padding: 20px 0;
     background-color: ${({navbar}) => (navbar ? '#170B64' : 'transparent')};

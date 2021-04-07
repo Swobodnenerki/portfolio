@@ -28,27 +28,3 @@
     color: #170B64;
     font-weight: 500;
 }
-.timeline-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #370B64;
-        content: '';
-        left: calc(50% - 2px);
-        width: 4px;
-        height: 100%;
-}
-
-.timeline-item {
-    display: flex;
-    background-color: purple;
-    justify-content: flex-end;
-    padding-left: 200px;
-    margin: 10px 0;
-    width: 50%;
-}
-.timeline-item:nth-child(odd) {
-    align-self: flex-end;
-    justify-content: flex-start;
-    padding-right: 200px;
-    padding-left: 0px;
-}

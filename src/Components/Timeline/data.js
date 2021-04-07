@@ -28,6 +28,18 @@ const data = [
             url: 'https://github.com/ITermiTI/JoyFinder',
             text: 'Find on github'
         }
+    },
+    {
+        text: 'JoyFinder',
+        date: '2020',
+        category:{
+            tag: 'medium',
+            color: '#038f69'
+        },
+        link:{
+            url: 'https://github.com/ITermiTI/JoyFinder',
+            text: 'Find on github'
+        }
     }
 ]
 export default data;

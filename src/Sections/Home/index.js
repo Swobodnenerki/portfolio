@@ -1,5 +1,4 @@
 import React from "react";
-import HomeStyle from '../../Styling/HomeStyle.css';
 import {HomeBackground, HomeWrapper, HomeText2, HomeText1, HomeText3, HomeTextSpan, HomeStars} from './HomeElements';
 class Home extends React.Component {
   render() {
