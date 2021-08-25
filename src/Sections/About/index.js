@@ -56,6 +56,31 @@ export const About = () => {
                     1<br/>
                     1<br/>
                     1<br/>
+                    1 <br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1 <br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1 <br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1 <br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1 <br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
+                    1<br/>
                 </About1stColumn>
                 <About2stColumn>
                     <TimeLine2/>
