@@ -5,13 +5,13 @@ export const AboutContainer = styled.section`
     flex-direction: column;
     background-color: #283747;
     /* height: 100vh; */
-    min-height: 500px;
+    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu';
     color: white;
     
-    overflow: auto;
+    overflow: hidden;
 `
 
 export const AboutColumnContainer = styled.div`
@@ -32,6 +32,5 @@ export const About2stColumn = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-height: 100vh;
     justify-content: center;
 `
