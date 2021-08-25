@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Photos from '../../Photos/29913.jpg';
-import Photos2 from '../../Photos/29913.jpg';
+import Photos2 from '../../Photos/29914.jpg';
 import SVG from '../../Photos/bg-11.svg';
 
 export const HomeBackground = styled.section`
@@ -12,7 +12,7 @@ export const HomeBackground = styled.section`
     /* background-attachment: fixed; */
     font-family: 'Ubuntu';
     color: white;
-    background-image: url(${Photos2}) no-repeat;
+    background: url(${Photos2}) no-repeat;
     justify-content: center;
     //Dawid
     background-position: center;
