@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import Photos from '../../Photos/29913.jpg';
 import Photos2 from '../../Photos/29914.jpg';
+
+
 import SVG from '../../Photos/bg-11.svg';
 
-export const HomeBackground = styled.section`
+export const HomeBackground = styled.div`
     display: flex;
     background-color: black;
     height: 100vh;
@@ -12,18 +14,13 @@ export const HomeBackground = styled.section`
     /* background-attachment: fixed; */
     font-family: 'Ubuntu';
     color: white;
-    background: url(${Photos2}) no-repeat;
+    background: url(${Photos}) no-repeat;
     justify-content: center;
     //Dawid
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
     //koniec
-`
-export const HomeStars = styled.div`
-    background: url(${SVG}) no-repeat;
-    background-size: 1800px;
-    width: 1500px;
 `
 
 export const HomeWrapper = styled.div`

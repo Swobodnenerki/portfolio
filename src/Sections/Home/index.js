@@ -4,7 +4,7 @@ class Home extends React.Component {
   render() {
     return (
       <HomeBackground id='home'>
-        <HomeStars>
+        
         <HomeWrapper>
           {/* <HomeText1>Hello, my name is</HomeText1> */}
           <HomeText2>Filip Kozak</HomeText2>
@@ -12,7 +12,7 @@ class Home extends React.Component {
             <HomeTextSpan>software developer</HomeTextSpan>
           {/* </HomeText3> */}
         </HomeWrapper>
-        </HomeStars>
+        
       </HomeBackground>
     );
   }
