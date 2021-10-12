@@ -6,6 +6,7 @@ import Home from "../Sections/Home/index";
 import Projects from "../Sections/Projects/index";
 
 
+
 const MainPage = () => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -20,6 +21,7 @@ const MainPage = () => {
       <Home/>
       <About/>
       <Projects/>
+      
     </div>
   );
 };

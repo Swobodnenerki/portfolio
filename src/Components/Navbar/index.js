@@ -24,7 +24,7 @@ function Navbar( {toggle} ){
             <MenuItem><MenuLink navbar={navbar} to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Home</MenuLink></MenuItem>
             <MenuItem><MenuLink navbar={navbar} to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</MenuLink></MenuItem>
             <MenuItem><MenuLink navbar={navbar} to='projects'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</MenuLink></MenuItem>
-            <MenuItem><MenuLink>Passions</MenuLink></MenuItem>
+            <MenuItem><MenuLink navbar={navbar} to='skills'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Skills</MenuLink></MenuItem>
             <MenuItem><MenuLink>Contact</MenuLink></MenuItem>
           </Menu>
           <MenuButton onClick={toggle}><MdMenu/></MenuButton>
