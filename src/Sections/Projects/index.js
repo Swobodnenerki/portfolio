@@ -8,7 +8,10 @@ import './style.css'
 import data from './data'
 import data2 from './data2'
 import './SwiperStyle.css'
-
+import Button from '@mui/material/Button';
+import Rating from '@mui/material/Rating';
+import StarIcon from '@mui/icons-material/Star';
+import { FaGithub} from "react-icons/fa";
 
 import myphoto from '../../Photos/p453781.jpg'
 class Projects extends React.Component {
@@ -32,27 +35,34 @@ class Projects extends React.Component {
 
 <Swiper id="main" style={{backgroundColor: "teal", marginLeft: "5%", marginRight:"5%", marginTop: "50px"}}>
          {data2.map((data2, idx) => (
-                <SwiperSlide data={data2} key={idx} style={{backgroundColor: "white", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
+                <SwiperSlide data={data2} key={idx} style={{backgroundColor: "#090B0E", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
             
-                <div ref={(divElement)=> {this.divElement=divElement}} style={{flex: "3 3 800px", backgroundColor: "tomato"}}>
+                <div ref={(divElement)=> {this.divElement=divElement}} style={{flex: "3 3 800px", backgroundColor: "tomato", margin: '30px'}}>
                   <img style={{width: "100%", height: "100%"}} src={data2.photo}/>
                 </div>
-                <div style={{flex: "1 3 400px", backgroundColor: "red" , overflow: 'auto', maxHeight: '600px'}}>
-                  
-                  <Title style={{marginTop: '30px'}}>JOYFINDER</Title>
-                <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
-                <div style={{marginTop: '30px', fontSize: '25px', textAlign: 'center'}}>Technologies</div>
-                <ul style={{fontSize: '18px', }}>
-                  <li>Backend: Spring, Java, PostgreSQL, SpringData</li>
-                  <li>Frontend: JavaScript, React, Google Maps, Google Geocode</li>
-                </ul>
-                <div></div>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
+                <div style={{flex: "1 3 400px", backgroundColor: "#090B0E" , maxHeight: '600px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', margin: '30px'}}>
+                <Title style={{}}>JOYFINDER</Title>
+                  <div style={{overflow: 'auto'}}>
+                    <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
+                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Technologies:</div>
+                    <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
+                      <li style={{marginBottom: '10px'}}>Backend: Java - PostgreSQL - SpringData - Spring</li>
+                      <li style={{marginBottom: '10px'}}>Frontend: JavaScript - React - Google Maps</li>
+                    </ul>
+                      {/* <div style={{marginTop: '20px', fontSize: '20px', textAlign: 'center', marginLeft: '30px', marginRight: '30px',}}>Spring - Java - PostgreSQL - React - Google Maps</div> */}
+                    <div style={{display: 'flex', marginTop: '20px', flexDirection: 'row', marginLeft: '30px', marginRight: '30px', justifyContent: 'space-between'}}>
+                      <div style={{fontSize: '25px', marginRight: '100px'}}>Difficulty:</div>
+                      <Rating name="half-rating-read" style={{color: "white", fontSize: '27px'}} defaultValue={2.5} precision={0.5} readOnly emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}/>
+                    </div>
+                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Contributors:</div>
+                    <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
+                      <li style={{marginBottom: '10px'}}>Paweł Owczrek</li>
+                      <li style={{marginBottom: '10px'}}>Wojciech Nokielski</li>
+                    </ul>
+                  </div>
+                <Button style={{backgroundColor: '#fff', padding: '10px 0', fontSize: '1rem', marginTop: '20px', color: 'black', fontFamily: 'Ubuntu', marginLeft: '30px', marginRight: '30px'}} startIcon={<FaGithub />}>Find on Github</Button>
                 </div>
+                
               </SwiperSlide>
             ))}
           
@@ -108,6 +118,7 @@ class Projects extends React.Component {
             width: '90%',
             marginLeft: '5%',
             marginRight: '5%',
+            backgroundColor: '#090B0E',
           }}
           direction='horizontal'
         >
@@ -119,12 +130,14 @@ class Projects extends React.Component {
                   display: 'flex',
                   flexBasis: '70%',
                   justifyContent: 'stretch',
+                  margin: '30px',
+                  
                 }}
               >
                 <Swiper
                   style={{
                     width: '100%',
-                    backgroundColor: 'maroon',
+                    backgroundColor: '#090B0E',
                   }}
                   direction={'vertical'}
                 >
@@ -141,20 +154,27 @@ class Projects extends React.Component {
                   ))}
                 </Swiper>
               </div>
-              <div className='right-container' style={{ flexBasis: '30%', backgroundColor:'#090B0E', overflow: 'auto'  }}>
-                <Title style={{marginTop: '30px'}}>JOYFINDER</Title>
-                <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
-                <div style={{marginTop: '30px', fontSize: '25px', textAlign: 'center'}}>Technologies</div>
-                <ul style={{fontSize: '18px', }}>
-                  <li>Backend: Spring, Java, PostgreSQL, SpringData</li>
-                  <li>Frontend: JavaScript, React, Google Maps, Google Geocode</li>
-                </ul>
-                <div></div>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
-                <h1 style={{textAlign: 'center'}}>JoyFinder</h1>
+              <div className='right-container' style={{ flexBasis: '30%', display: 'flex', flexDirection: 'column', margin: '30px', justifyContent: 'space-between'  }}>
+                <Title style={{}}>JOYFINDER</Title>
+                  <div style={{overflow: 'auto'}}>
+                    <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
+                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Technologies:</div>
+                    <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
+                      <li style={{marginBottom: '10px'}}>Backend: Java - PostgreSQL - SpringData - Spring</li>
+                      <li style={{marginBottom: '10px'}}>Frontend: JavaScript - React - Google Maps</li>
+                    </ul>
+                      {/* <div style={{marginTop: '20px', fontSize: '20px', textAlign: 'center', marginLeft: '30px', marginRight: '30px',}}>Spring - Java - PostgreSQL - React - Google Maps</div> */}
+                    <div style={{display: 'flex', marginTop: '20px', flexDirection: 'row', marginLeft: '30px', marginRight: '30px', justifyContent: 'space-between'}}>
+                      <div style={{fontSize: '25px', marginRight: '100px'}}>Difficulty:</div>
+                      <Rating name="half-rating-read" style={{color: "white", fontSize: '27px'}} defaultValue={2.5} precision={0.5} readOnly emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}/>
+                    </div>
+                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Contributors:</div>
+                    <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
+                      <li style={{marginBottom: '10px'}}>Paweł Owczrek</li>
+                      <li style={{marginBottom: '10px'}}>Wojciech Nokielski</li>
+                    </ul>
+                  </div>
+                <Button style={{backgroundColor: '#fff', padding: '10px 0', fontSize: '1rem', marginTop: '20px', color: 'black', fontFamily: 'Ubuntu', marginLeft: '30px'}} startIcon={<FaGithub />}>Find on Github</Button>
               </div>
             </SwiperSlide>
           ))}
