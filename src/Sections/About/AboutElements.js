@@ -112,7 +112,7 @@ export const About2stColumn = styled.div`
 `
 export const Spacer = styled.div`
     align-self: center;
-    background-color: #EF3B3B;
+    background-color: #0bceaf;
     width: 70%;
     height: 4px;
     border-radius: 5px;

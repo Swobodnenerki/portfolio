@@ -26,7 +26,8 @@ class Projects extends React.Component {
     const height = this.divElement.clientHeight;
     this.setState({ height });
   }
-  
+
+
   render() {
     return (
       <ProjectsContainer id='projects'>
@@ -155,26 +156,36 @@ class Projects extends React.Component {
                 </Swiper>
               </div>
               <div className='right-container' style={{ flexBasis: '30%', display: 'flex', flexDirection: 'column', margin: '30px', justifyContent: 'space-between'  }}>
-                <Title style={{}}>JOYFINDER</Title>
+                <Title style={{}}>{item.title}</Title>
                   <div style={{overflow: 'auto'}}>
-                    <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
+                    <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>{item.description}</div>
                     <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Technologies:</div>
-                    <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
-                      <li style={{marginBottom: '10px'}}>Backend: Java - PostgreSQL - SpringData - Spring</li>
-                      <li style={{marginBottom: '10px'}}>Frontend: JavaScript - React - Google Maps</li>
-                    </ul>
+                    
+                  <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
+                  {item.technologies.map((sub, idx2) => (
+                    <li key={idx2} style={{marginBottom: '10px'}}>
+                     {sub.technology}
+                    </li>
+                  ))}
+                </ul>
+                    
                       {/* <div style={{marginTop: '20px', fontSize: '20px', textAlign: 'center', marginLeft: '30px', marginRight: '30px',}}>Spring - Java - PostgreSQL - React - Google Maps</div> */}
                     <div style={{display: 'flex', marginTop: '20px', flexDirection: 'row', marginLeft: '30px', marginRight: '30px', justifyContent: 'space-between'}}>
                       <div style={{fontSize: '25px', marginRight: '100px'}}>Difficulty:</div>
-                      <Rating name="half-rating-read" style={{color: "white", fontSize: '27px'}} defaultValue={2.5} precision={0.5} readOnly emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}/>
+                      <Rating name="half-rating-read" style={{color: "white", fontSize: '27px'}} defaultValue={item.difficulty} precision={0.5} readOnly emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}/>
                     </div>
-                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Contributors:</div>
+                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Authors:</div>
                     <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
-                      <li style={{marginBottom: '10px'}}>Paweł Owczrek</li>
-                      <li style={{marginBottom: '10px'}}>Wojciech Nokielski</li>
+                      {item.contributors.map((sub, idx2) => (
+                        <li key={idx2} style={{marginBottom: '10px'}}>
+                          {sub.contributor}
+                    
+                        </li>   
+                      ))}
                     </ul>
+              
                   </div>
-                <Button style={{backgroundColor: '#fff', padding: '10px 0', fontSize: '1rem', marginTop: '20px', color: 'black', fontFamily: 'Ubuntu', marginLeft: '30px'}} startIcon={<FaGithub />}>Find on Github</Button>
+                <Button href={item.buttonLink} style={{backgroundColor: '#fff', padding: '10px 0', fontSize: '1rem', marginTop: '20px', color: 'black', fontFamily: 'Ubuntu', marginLeft: '30px'}} startIcon={<FaGithub />}>{item.buttonMessage}</Button>
               </div>
             </SwiperSlide>
           ))}
