@@ -125,5 +125,28 @@
     .timeline-item{
         width: 44%;
     }
+    
+}
+@media only screen and (max-width: 480px) {
+    .timeline-item-content {
+        width: 300px;
+    }
+    .timeline-item{
+        width: 42.5%;
+    }
+    .timeline-item-content .tag{
+        display: none;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .timeline-item-content {
+        width: 200px;
+    }
+    .timeline-item{
+        width: 42.5%;
+    }
+    .timeline-item-content .tag{
+        display: none;
+    }
 }
 

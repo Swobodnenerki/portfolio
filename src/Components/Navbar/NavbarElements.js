@@ -25,7 +25,7 @@ export const Logo = styled.button`
     outline: 0;
     cursor: pointer;
     font-family: 'Ubuntu';
-    color: ${({navbar}) => (navbar ? 'white' : '#transparent')};
+    color: ${({navbar}) => (navbar ? 'white' : 'transparent')};
 `
 
 export const Menu = styled.ul`
