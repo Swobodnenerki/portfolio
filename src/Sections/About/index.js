@@ -8,7 +8,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import Button from '@material-ui/core/Button';
-import {AboutContainer, AboutColumnContainer, About1stColumn, About2stColumn, Header, Title, PhotoContainer, Photo, Spacer, TextContainer, IconButton, IconButtonContainer, IconButtonText} from './AboutElements';
+import {AboutContainer, AboutColumnContainer, About1stColumn, About2stColumn, Header, Title, PhotoContainer, Photo, Spacer, TextContainer, IconButton, IconButtonContainer, IconButtonText, Divider} from './AboutElements';
 import { Chrono } from "react-chrono";
 import TimeLine2 from '../../Components/Timeline2/TimeLine';
 import myphoto from "../../Photos/filip4.jpg";
@@ -54,8 +54,9 @@ export const About = () => {
     return (
         <div>
         <AboutContainer id='about'>
-            <Spacer/>
+            <Divider>
             <Header>ABOUT</Header>
+            </Divider>
             <AboutColumnContainer>
                 <About1stColumn>
                     <Title>LIFE</Title>

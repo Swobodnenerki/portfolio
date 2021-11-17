@@ -1,7 +1,7 @@
 import React from "react";
 import {ProjectsContainer, VerticalSwiper, HorizontalSwiper, HorizontalSwiperSlide, LeftContainer, Image, RightContainer} from './ProjectsElements';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Spacer, Header, Title } from "../About/AboutElements";
+import { Spacer, Header, Title, Divider } from "../About/AboutElements";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import './style.css'
@@ -31,8 +31,9 @@ class Projects extends React.Component {
   render() {
     return (
       <ProjectsContainer id='projects'>
-        <Spacer/>
+        <Divider>
             <Header>PROJECTS</Header>
+            </Divider>
 
 <Swiper id="main" style={{backgroundColor: "teal", marginLeft: "5%", marginRight:"5%", marginTop: "50px"}}>
          {data2.map((data2, idx) => (

@@ -10,14 +10,13 @@ class Footer extends React.Component {
       window.location.href = "https://github.com/Swobodnenerki?tab=repositories";
     }
     return (
-        
             <FooterContainer>
                 <Menu>
                     <MenuItem><MenuLink to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Home</MenuLink></MenuItem>
                     <MenuItem><MenuLink to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</MenuLink></MenuItem>
                     <MenuItem><MenuLink to='projects'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</MenuLink></MenuItem>
                     <MenuItem><MenuLink to='skills'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Skills</MenuLink></MenuItem>
-                    <MenuItem><MenuLink>Contact</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to='contact'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Contact</MenuLink></MenuItem>
                 </Menu>
                 <Menu>
                     <MenuItem onClick={goToFacebook}><IconLink><FaFacebook/></IconLink></MenuItem>
@@ -27,21 +26,6 @@ class Footer extends React.Component {
                 </Menu>
                 <Info>&copy; 2021 Filip Kozak</Info>
             </FooterContainer>
-
-        
-        // <FooterContainer>
-        //  <MaxWidth>
-        //       <Menu>
-        //         <MenuItem><MenuLink to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Home</MenuLink></MenuItem>
-        //         <MenuItem><MenuLink to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</MenuLink></MenuItem>
-        //         <MenuItem><MenuLink to='projects'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</MenuLink></MenuItem>
-        //         <MenuItem><MenuLink to='skills'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Skills</MenuLink></MenuItem>
-        //         <MenuItem><MenuLink>Contact</MenuLink></MenuItem>
-        //         </Menu>
-        //       </MaxWidth>
-        // </FooterContainer>
-          
-      
     );
   }
 }
