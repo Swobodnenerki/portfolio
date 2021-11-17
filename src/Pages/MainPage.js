@@ -1,9 +1,13 @@
 import React, {useState} from "react";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar/index";
 import Sidebar from "../Components/Sidebar";
 import { About } from "../Sections/About";
+import { Contact } from "../Sections/Contact";
 import Home from "../Sections/Home/index";
 import Projects from "../Sections/Projects/index";
+import Skills from "../Sections/Skills";
+
 
 
 const MainPage = () => {
@@ -20,6 +24,9 @@ const MainPage = () => {
       <Home/>
       <About/>
       <Projects/>
+      <Skills/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 };

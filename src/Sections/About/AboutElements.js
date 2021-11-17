@@ -112,9 +112,34 @@ export const About2stColumn = styled.div`
 `
 export const Spacer = styled.div`
     align-self: center;
-    background-color: #EF3B3B;
+    background-color: #0bceaf;
     width: 70%;
     height: 4px;
     border-radius: 5px;
     margin: 40px;
+`
+
+export const Divider = styled.h4`
+    display: flex;
+    align-items: center;
+    &::before {
+        background-color: #0bceaf;
+        border-radius: 5px;
+        display: flex;
+        content: "";
+        flex-grow: 1;
+        height: 4px;
+        margin: 0 20px;
+        margin-left: 12%;
+  }
+  &::after {
+        border-radius: 5px;
+        display: flex;
+        content: "";
+        flex-grow: 1;
+        height: 4px;
+        background-color: #0bceaf;
+        margin: 0 20px;
+        margin-right: 12%;
+  }
 `
