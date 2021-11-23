@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutContainer, Spacer, Header, AboutColumnContainer, About1stColumn, About2stColumn, Title, Divider  } from "../About/AboutElements";
 import './SkillsStyle.css'
-import {CircleContainer, EachProffesionalSkill, EachSkillContainer, Info, Name, Percentage, PercentageText, Principal, ProffesionalContainer, ProffesionalSkillText, ProgressBar, TitleSkills} from './SkilsElements'
+import {CircleContainer, EachProffesionalSkill, EachSkillContainer, Info, Name, Percentage, PercentageText, Principal, ProffesionalContainer, ProffesionalSkillText, ProgressBar, TitleMargin, TitleSkills} from './SkilsElements'
 import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 import softSkillsData from './softSkillsData';
@@ -15,7 +15,8 @@ class Skills extends React.Component {
           </Divider>
       <AboutColumnContainer>
               <About1stColumn >
-                  <TitleSkills>TECHNICAL</TitleSkills>
+                  <Title>TECHNICAL</Title>
+                  <TitleMargin/>
                   {softSkillsData.map((data, idx) => (
                       <EachSkillContainer data={data} key={idx}>
                           <Principal>

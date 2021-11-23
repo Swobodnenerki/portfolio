@@ -137,16 +137,28 @@
     .timeline-item-content .tag{
         display: none;
     }
+    .timeline-item-content p{
+        font-size: 14.5px;
+    }
+    .timeline-item-content time{
+        font-size: 11px;
+    }
 }
 @media only screen and (max-width: 380px) {
     .timeline-item-content {
         width: 200px;
     }
     .timeline-item{
-        width: 42.5%;
+        width: 39.5%;
     }
     .timeline-item-content .tag{
         display: none;
+    }
+    .timeline-item-content p{
+        font-size: 13px;
+    }
+    .timeline-item-content time{
+        font-size: 9.5px;
     }
 }
 

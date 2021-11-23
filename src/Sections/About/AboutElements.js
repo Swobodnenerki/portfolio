@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import myphoto from "../../Photos/29913.jpg";
+import breakpoint from '../Home/breakpoints';
 
 export const AboutContainer = styled.section`
     display: flex;
@@ -19,12 +20,30 @@ export const Header = styled.div`
     text-align: center;
     font-size: 37px;
     font-weight: 500;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 23px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 30px;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 37px;
+    }
 `
 
 export const Title = styled.div`
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 20px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 35px;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 30px;
+    }
 `
 
 export const AboutColumnContainer = styled.div`
@@ -49,6 +68,7 @@ export const PhotoContainer = styled.div`
 `
 export const Photo = styled.img`
     width: 35%;
+    min-width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
     
@@ -56,7 +76,15 @@ export const Photo = styled.img`
 
 export const TextContainer = styled.div`
     margin-top: 40px;
-    font-size: 25px;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 18px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 20px;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 25px;
+    }
 `
 export const IconButtonContainer = styled.div`
     display: flex;
@@ -69,6 +97,12 @@ export const IconButtonContainer = styled.div`
 export const IconButtonText = styled.div`
     color: white;
     font-size: 20px;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 18px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 20px;
+    }
 `
 export const Dupa = styled.div`
     &:hover{

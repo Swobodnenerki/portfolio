@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Title } from '../About/AboutElements';
-export const TitleSkills = styled(Title)`
+export const TitleMargin = styled.div`
     margin-bottom: 50px;
 `
 export const EachSkillContainer = styled.div`
@@ -13,6 +13,7 @@ export const Principal = styled.div`
     display: inline-block;
     width: 100%;
     vertical-align: middle;
+    min-width: 180px;
 `
 export const Info = styled.div`
     position: relative;

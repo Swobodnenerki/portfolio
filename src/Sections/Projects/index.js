@@ -35,34 +35,34 @@ class Projects extends React.Component {
             <Header>PROJECTS</Header>
             </Divider>
 
-<Swiper id="main" style={{backgroundColor: "teal", marginLeft: "5%", marginRight:"5%", marginTop: "50px"}}>
+<Swiper id="main" showArrows={false} style={{backgroundColor: "teal", marginTop: "50px", width: '100%'}}>
          {data2.map((data2, idx) => (
                 <SwiperSlide data={data2} key={idx} style={{backgroundColor: "#090B0E", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
             
                 <div ref={(divElement)=> {this.divElement=divElement}} style={{flex: "3 3 800px", backgroundColor: "tomato", margin: '30px'}}>
                   <img style={{width: "100%", height: "100%"}} src={data2.photo}/>
                 </div>
-                <div style={{flex: "1 3 400px", backgroundColor: "#090B0E" , maxHeight: '600px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', margin: '30px'}}>
-                <Title style={{}}>JOYFINDER</Title>
+                <div style={{flex: "1 3 400px", backgroundColor: "#090B0E", display: 'flex', flexDirection: 'column', justifyContent: 'space-between', margin: '30px'}}>
+                <Title className='tytul'>JOYFINDER</Title>
                   <div style={{overflow: 'auto'}}>
-                    <div style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', fontSize: '20px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
-                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Technologies:</div>
+                    <div class='opis' style={{marginLeft: '30px', marginTop: '30px', marginRight: '30px', textAlign: 'justify'}}>Web and mobile app for searching, hosting and attending events in your neighbourhood. You are provided with many types of search tools to never be bored again! Web part of app is hosted on heroku</div>
+                    <div class='technologie' style={{marginTop: '20px', marginLeft: '30px', marginRight: '30px'}}>Technologies:</div>
                     <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
-                      <li style={{marginBottom: '10px'}}>Backend: Java - PostgreSQL - SpringData - Spring</li>
-                      <li style={{marginBottom: '10px'}}>Frontend: JavaScript - React - Google Maps</li>
+                      <li class='technologia' style={{marginBottom: '10px'}}>Backend: Java - PostgreSQL - SpringData - Spring</li>
+                      <li class='technologia' style={{marginBottom: '10px'}}>Frontend: JavaScript - React - Google Maps</li>
                     </ul>
                       {/* <div style={{marginTop: '20px', fontSize: '20px', textAlign: 'center', marginLeft: '30px', marginRight: '30px',}}>Spring - Java - PostgreSQL - React - Google Maps</div> */}
-                    <div style={{display: 'flex', marginTop: '20px', flexDirection: 'row', marginLeft: '30px', marginRight: '30px', justifyContent: 'space-between'}}>
-                      <div style={{fontSize: '25px', marginRight: '100px'}}>Difficulty:</div>
-                      <Rating name="half-rating-read" style={{color: "white", fontSize: '27px'}} defaultValue={2.5} precision={0.5} readOnly emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}/>
+                    <div  style={{display: 'flex', marginTop: '20px', flexDirection: 'row', marginLeft: '30px', marginRight: '30px', justifyContent: 'space-between'}}>
+                      <div class='trudnosc'>Difficulty:</div>
+                      <Rating className='gwiazdki' name="half-rating-read" style={{color: "white", fontSize: '27px'}} defaultValue={2.5} precision={0.5} readOnly emptyIcon={<StarIcon style={{ opacity: 0.55, color: 'white' }} fontSize="inherit" />}/>
                     </div>
-                    <div style={{marginTop: '20px', fontSize: '25px', marginLeft: '30px', marginRight: '30px'}}>Contributors:</div>
+                    <div class='wspoltworcy' style={{marginTop: '20px', marginLeft: '30px', marginRight: '30px'}}>Contributors:</div>
                     <ul style={{fontSize: '18px', marginLeft: '10px', marginRight: '30px'}}>
-                      <li style={{marginBottom: '10px'}}>Paweł Owczrek</li>
-                      <li style={{marginBottom: '10px'}}>Wojciech Nokielski</li>
+                      <li class='wspoltworca' style={{marginBottom: '10px'}}>Paweł Owczrek</li>
+                      <li class='wspoltworca' style={{marginBottom: '10px'}}>Wojciech Nokielski</li>
                     </ul>
                   </div>
-                <Button style={{backgroundColor: '#fff', padding: '10px 0', fontSize: '1rem', marginTop: '20px', color: 'black', fontFamily: 'Ubuntu', marginLeft: '30px', marginRight: '30px'}} startIcon={<FaGithub />}>Find on Github</Button>
+                <Button className='przycisk' startIcon={<FaGithub />}>Find on Github</Button>
                 </div>
                 
               </SwiperSlide>

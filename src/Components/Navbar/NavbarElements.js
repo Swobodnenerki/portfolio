@@ -17,7 +17,7 @@ export const MaxWidth = styled.div`
     padding: 0 50px;
     
 `
-export const Logo = styled.button`
+export const Logo = styled(Link)`
     font-size: 35px;
     font-weight: 600;
     border: none;

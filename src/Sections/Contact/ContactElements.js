@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Header} from '../About/AboutElements'
+import breakpoint from '../Home/breakpoints';
 export const ContactContainer = styled.section`
     display: flex;
     flex-direction: column;
@@ -21,9 +22,17 @@ export const TextContainer = styled.div`
     margin-left: 20%;
     margin-right: 20%;
     color: "white";
-    font-size: 25px;
     text-align: center;
     margin-bottom: 50px;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 18px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 20px;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 25px;
+    }
 `
 export const EmailContainer = styled.div`
     display: flex;
@@ -35,6 +44,15 @@ export const EmailContainer = styled.div`
     color: "white";
     font-size: 25px;
     text-align: center;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 18px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 20px;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 25px;
+    }
 `
 export const HeaderContact = styled(Header)`
     color: #ffff;

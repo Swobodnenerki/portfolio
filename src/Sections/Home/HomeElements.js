@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import Photos from '../../Photos/29913.jpg';
 import Photos2 from '../../Photos/29914.jpg';
-
-
+import { About1stColumn, About2stColumn } from '../About/AboutElements';
+import breakpoint from './breakpoints';
 import SVG from '../../Photos/bg-11.svg';
 
 export const HomeBackground = styled.div`
@@ -19,7 +19,6 @@ export const HomeBackground = styled.div`
     //Dawid
     background-position: center;
     background-repeat: no-repeat;
-    align-items: center;
     //koniec
 `
 
@@ -27,9 +26,9 @@ export const HomeWrapper = styled.div`
     /* margin: 445px 0 75px 100px; */
     //Dawid
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: flex-start;
     //Koniec
     
 `
@@ -38,10 +37,18 @@ export const HomeText1 = styled.div`
 `
 
 export const HomeText2 = styled.div`
-    font-size: 74px;
+    margin-top: 100px;
+    font-size: 72px;
     font-weight: 600;
-    margin-left: -3px;
-    
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 32px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 72px;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 72px;
+    }
 `
 export const HomeText3 = styled.div`
     font-size: 40px;
@@ -53,4 +60,34 @@ export const HomeTextSpan = styled.span`
     color: #3D23DD;
     font-weight: 500;
     text-shadow: 3px 4px 3px #000000;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 25px;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 35px;
+    }
+`
+export const TextHomeContainer = styled(About1stColumn)`
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 0.5 0.5 500px;
+`
+export const HomePhotoContainer = styled.div`
+    display: flex;
+    flex:  1 1 950px;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 0;
+    @media only screen and ${breakpoint.device.xs}{
+        display: none;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        display: flex;
+    }
+`
+export const Image = styled.img`
+    width: 80%;
+    
 `
