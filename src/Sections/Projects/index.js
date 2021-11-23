@@ -35,7 +35,7 @@ class Projects extends React.Component {
             <Header>PROJECTS</Header>
             </Divider>
 
-<Swiper id="main" showArrows={false} style={{backgroundColor: "teal", marginTop: "50px", width: '100%'}}>
+<Swiper id="main" showArrows={false} style={{backgroundColor: "teal", marginTop: "50px", width: '90%'}}>
          {data2.map((data2, idx) => (
                 <SwiperSlide data={data2} key={idx} style={{backgroundColor: "#090B0E", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
             
