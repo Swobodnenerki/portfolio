@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import {MdMenu} from 'react-icons/md';
-import Link from 'react-scroll';
-import styled from 'styled-components'
 import { Logo, MaxWidth, Menu, MenuButton, MenuLink, Nav, MenuItem } from "./NavbarElements";
 
 

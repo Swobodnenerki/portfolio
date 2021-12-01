@@ -6,7 +6,6 @@ export const TimelineItemContent = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
     width: 500px;
     text-align: right;
     align-items: flex-end;

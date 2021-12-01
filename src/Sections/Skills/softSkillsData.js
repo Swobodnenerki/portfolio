@@ -1,6 +1,10 @@
 const softSkillsData = [
     {
-        skill: "JavaScript",
+        skill: "JavaScript/React/ReactNative",
+        rating: 70, 
+    },
+    {
+        skill: "HTML/CSS",
         rating: 80, 
     },
     {
@@ -8,8 +12,8 @@ const softSkillsData = [
         rating: 60, 
     },
     {
-        skill: "SQL",
-        rating: 70, 
+        skill: "Dart/Flutter",
+        rating: 50, 
     },
     {
         skill: "SQL",

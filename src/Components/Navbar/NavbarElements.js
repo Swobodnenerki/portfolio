@@ -17,8 +17,8 @@ export const MaxWidth = styled.div`
     padding: 0 50px;
     
 `
-export const Logo = styled.button`
-    font-size: 30px;
+export const Logo = styled(Link)`
+    font-size: 1.875rem;
     font-weight: 600;
     border: none;
     background-color: transparent;
@@ -41,7 +41,7 @@ export const MenuItem = styled.li`
 export const MenuLink = styled(Link)`
     color: white;
     /* color: ${({navbar}) => (navbar ? 'white' : '#3D23DD')}; zmaiana koloru tekstu*/
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     margin-left: 25px;
     display: flex;
@@ -52,12 +52,12 @@ export const MenuLink = styled(Link)`
     font-family: 'Ubuntu';
     transition: color 0.3s ease;
     &.active{
-        border-bottom: 3px solid #de354c;
+        border-bottom: 3px solid #0bceaf;
         border-bottom: ${({navbar}) => (navbar ? '3px solid #ffffff' : '3px solid #3D23DD')};
     }
     &:hover{
         transition: color 0.3s ease;
-        color: #de354c;
+        color: #0bceaf;
     }
 
 `

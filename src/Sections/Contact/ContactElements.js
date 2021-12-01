@@ -24,14 +24,15 @@ export const TextContainer = styled.div`
     color: "white";
     text-align: center;
     margin-bottom: 50px;
+    text-align: justify;
     @media only screen and ${breakpoint.device.xs}{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     @media only screen and ${breakpoint.device.s}{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     @media only screen and ${breakpoint.device.sm}{
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 `
 export const EmailContainer = styled.div`
@@ -42,16 +43,16 @@ export const EmailContainer = styled.div`
     margin-right: 20%;
     margin-bottom: 20vh;
     color: "white";
-    font-size: 25px;
+    font-size: 1.563rem;
     text-align: center;
     @media only screen and ${breakpoint.device.xs}{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     @media only screen and ${breakpoint.device.s}{
-        font-size: 20px;
+        font-size: 1.25;
     }
     @media only screen and ${breakpoint.device.sm}{
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 `
 export const HeaderContact = styled(Header)`

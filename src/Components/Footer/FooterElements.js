@@ -32,23 +32,23 @@ export const MenuItem = styled.li`
 
 export const MenuLink = styled(Link)`
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     cursor: pointer;
     &:hover{
         transition: color 0.3s ease;
-        color: #de354c;
+        color: #0bceaf;
     }
 
 `
 
 export const IconLink = styled.i`
     cursor: pointer;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: white;
     &:hover{
         transition: color 0.3s ease;
-        color: #de354c;
+        color: #0bceaf;
     }
 
 `

@@ -1,7 +1,10 @@
 import styled from 'styled-components';
-import { Title } from '../About/AboutElements';
+import {AboutContainer } from '../About/AboutElements';
 export const TitleMargin = styled.div`
     margin-bottom: 50px;
+`
+export const SkillsContainer = styled(AboutContainer)`
+    background-color: #0D1118;
 `
 export const EachSkillContainer = styled.div`
     position: relative;
@@ -22,15 +25,15 @@ export const Name = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 0.938rem;
+    font-weight: 500;
     opacity: 0.9;
 `
 export const PercentageText = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
 `
 export const ProgressBar = styled.div`
@@ -56,7 +59,6 @@ export const ProffesionalContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* max-width: 450px;  */
     max-width: 550px;
 `
 export const EachProffesionalSkill = styled.div`
@@ -69,6 +71,10 @@ export const CircleContainer = styled.div`
     width: 120px;
 `
 export const ProffesionalSkillText = styled.div`
+    margin-top: 5px;
+    font-size: 0.938rem;
+    font-weight: 500;
+    opacity: 0.9;
     text-align: center;
 
 

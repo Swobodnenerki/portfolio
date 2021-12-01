@@ -1,7 +1,7 @@
 import React from "react";
-import { AboutContainer, Spacer, Header, AboutColumnContainer, About1stColumn, About2stColumn, Title, Divider  } from "../About/AboutElements";
-import './SkillsStyle.css'
-import {CircleContainer, EachProffesionalSkill, EachSkillContainer, Info, Name, Percentage, PercentageText, Principal, ProffesionalContainer, ProffesionalSkillText, ProgressBar, TitleMargin, TitleSkills} from './SkilsElements'
+import { Header, AboutColumnContainer, About1stColumn, About2stColumn, Title, Divider  } from "../About/AboutElements";
+
+import {CircleContainer, SkillsContainer, EachProffesionalSkill, EachSkillContainer, Info, Name, Percentage, PercentageText, Principal, ProffesionalContainer, ProffesionalSkillText, ProgressBar, TitleMargin} from './SkilsElements'
 import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 import softSkillsData from './softSkillsData';
@@ -9,7 +9,7 @@ import skillsData from './skillsData'
 class Skills extends React.Component {
   render() {
     return (
-      <AboutContainer id='skills'>
+      <SkillsContainer id='skills'>
       <Divider>
           <Header>SKILLS</Header>
           </Divider>
@@ -37,7 +37,7 @@ class Skills extends React.Component {
                       {skillsData.map((data, idx) => (
                       <EachProffesionalSkill data={data} key={idx}>
                           <CircleContainer>
-                              <CircularProgressbar  value={data.rating} text={`${data.rating}%`} styles={buildStyles({strokeLinecap: "butt", textColor: "white", pathColor: "#0bceaf", trailColor: "rgba(0,0,0,0.5)"})} />
+                              <CircularProgressbar  value={data.rating} text={`${data.rating}%`} styles={buildStyles({strokeLinecap: "butt", textColor: "white", pathColor: "#221383", trailColor: "rgba(0,0,0,0.5)"})} />
                           </CircleContainer>
                           <ProffesionalSkillText>{data.skill}</ProffesionalSkillText>
                       </EachProffesionalSkill>
@@ -49,28 +49,28 @@ class Skills extends React.Component {
                   <ProffesionalContainer>
                       <EachProffesionalSkill>
                           <CircleContainer>
-                              <CircularProgressbar value={85} text={`C1`} background backgroundPadding={4} styles={buildStyles({ backgroundColor: "#012169", strokeLinecap: "butt", textColor: "white", pathColor: "#c8102e", trailColor: "#ffffff"})} />
+                              <CircularProgressbar value={85} text={`C1`} background backgroundPadding={4} styles={buildStyles({ backgroundColor: "#0D1118", strokeLinecap: "butt", textColor: "white", pathColor: "#c8102e", trailColor: "#000000"})} />
                           </CircleContainer>
                           <ProffesionalSkillText>English</ProffesionalSkillText>
                       </EachProffesionalSkill>
 
                       <EachProffesionalSkill>
                           <CircleContainer>
-                              <CircularProgressbar value={50} text={`B1`} background backgroundPadding={4}  styles={buildStyles({backgroundColor: "#0039a6", strokeLinecap: "butt", textColor: "white", pathColor: "#d52b1e", trailColor: "#ffffff"})}/>  
+                              <CircularProgressbar value={50} text={`B1`} background backgroundPadding={4}  styles={buildStyles({backgroundColor: "#0D1118", strokeLinecap: "butt", textColor: "white", pathColor: "#0039a6", trailColor: "#000000"})}/>  
                           </CircleContainer>
                           <ProffesionalSkillText>Russian</ProffesionalSkillText>
                       </EachProffesionalSkill>
 
                       <EachProffesionalSkill>
                           <CircleContainer>
-                              <CircularProgressbar value={25} text={`A2`} background backgroundPadding={4}  styles={buildStyles({backgroundColor: "#000000", strokeLinecap: "butt", textColor: "#ffffff", pathColor: "#FFCE00", trailColor: "#DD0000"})}/>
+                              <CircularProgressbar value={15} text={`A1`} background backgroundPadding={4}  styles={buildStyles({backgroundColor: "#0D1118", strokeLinecap: "butt", textColor: "#ffffff", pathColor: "#FFCE00", trailColor: "#000000"})}/>
                           </CircleContainer>
                           <ProffesionalSkillText>German</ProffesionalSkillText>
                       </EachProffesionalSkill>
                   </ProffesionalContainer>
               </About1stColumn>
           </AboutColumnContainer>
-    </AboutContainer>
+    </SkillsContainer>
     );
   }
 }
