@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import myphoto from "../../Photos/29913.jpg";
+import styled from 'styled-components';
+import breakpoint from '../Home/breakpoints';
 
 export const AboutContainer = styled.section`
     display: flex;
@@ -17,14 +17,32 @@ export const AboutContainer = styled.section`
 export const Header = styled.div`
     margin-top: 10px;
     text-align: center;
-    font-size: 37px;
+    font-size: 2.313rem;
     font-weight: 500;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 1.438rem;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 1.875rem;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 2.313rem;
+    }
 `
 
 export const Title = styled.div`
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 500;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 1.25rem;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 2.188rem;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 1.875rem;
+    }
 `
 
 export const AboutColumnContainer = styled.div`
@@ -49,6 +67,7 @@ export const PhotoContainer = styled.div`
 `
 export const Photo = styled.img`
     width: 35%;
+    min-width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
     
@@ -56,7 +75,16 @@ export const Photo = styled.img`
 
 export const TextContainer = styled.div`
     margin-top: 40px;
-    font-size: 25px;
+    text-align: justify;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 1.125rem;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 1.25rem;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        font-size: 1.563rem;
+    }
 `
 export const IconButtonContainer = styled.div`
     display: flex;
@@ -68,14 +96,15 @@ export const IconButtonContainer = styled.div`
 `
 export const IconButtonText = styled.div`
     color: white;
-    font-size: 20px;
-`
-export const Dupa = styled.div`
-    &:hover{
-        transition: color 0.3s ease;
-        color: #de354c;
+    font-size: 1.25rem;
+    @media only screen and ${breakpoint.device.xs}{
+        font-size: 1.125rem;
+    }
+    @media only screen and ${breakpoint.device.s}{
+        font-size: 1.25rem;
     }
 `
+
 export const IconButton = styled.div`
     color: white;
     margin: 15px;
@@ -90,11 +119,11 @@ export const IconButton = styled.div`
     cursor: pointer;
     &:hover{
         transition: color 0.3s ease;
-        color: #de354c;
+        color: #0bceaf;
     }
     &:hover ${IconButtonText} {
         transition: color 0.3s ease;
-        color: #de354c;
+        color: #0bceaf;
     }
 `
 

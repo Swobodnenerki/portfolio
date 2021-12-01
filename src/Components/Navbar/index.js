@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import {MdMenu} from 'react-icons/md';
-import Link from 'react-scroll';
-import styled from 'styled-components'
 import { Logo, MaxWidth, Menu, MenuButton, MenuLink, Nav, MenuItem } from "./NavbarElements";
 
 
@@ -19,7 +17,7 @@ function Navbar( {toggle} ){
   return(
       <Nav navbar={navbar}>
         <MaxWidth>
-          <Logo navbar={navbar}>Filip Kozak</Logo>
+          <Logo navbar={navbar} to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Filip Kozak</Logo>
           <Menu>
             <MenuItem><MenuLink navbar={navbar} to='home' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Home</MenuLink></MenuItem>
             <MenuItem><MenuLink navbar={navbar} to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</MenuLink></MenuItem>

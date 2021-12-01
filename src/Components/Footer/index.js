@@ -1,13 +1,13 @@
 import React from "react";
-import { MenuLink, Menu, MenuItem, MaxWidth, Nav, FooterContainer, IconLink, Info } from "./FooterElements";
-import { FaGithub, FaPaperclip, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { MenuLink, Menu, MenuItem, FooterContainer, IconLink, Info } from "./FooterElements";
+import { FaGithub, FaPaperclip, FaLinkedin } from "react-icons/fa";
 class Footer extends React.Component {
   render() {
-    const goToFacebook = () => {
-      window.location.href = "https://www.facebook.com/filip.kozak.509/";
-    }
     const goToGithub = () => {
       window.location.href = "https://github.com/Swobodnenerki?tab=repositories";
+    }
+    const goToCV = () => {
+      window.location.href = "https://drive.google.com/file/d/1bpY8ZkZIPaX3IAxaj4KyXZl3Rxj8JvDS/view?usp=sharing";
     }
     return (
             <FooterContainer>
@@ -19,10 +19,9 @@ class Footer extends React.Component {
                     <MenuItem><MenuLink to='contact'smooth={true} duration={500} spy={true} exact='true' offset={-90}>Contact</MenuLink></MenuItem>
                 </Menu>
                 <Menu>
-                    <MenuItem onClick={goToFacebook}><IconLink><FaFacebook/></IconLink></MenuItem>
                     <MenuItem><IconLink><FaLinkedin/></IconLink></MenuItem>
                     <MenuItem onClick={goToGithub}><IconLink><FaGithub/></IconLink></MenuItem>
-                    <MenuItem><IconLink><FaPaperclip/></IconLink></MenuItem>
+                    <MenuItem onClick={goToCV}><IconLink><FaPaperclip/></IconLink></MenuItem>
                 </Menu>
                 <Info>&copy; 2021 Filip Kozak</Info>
             </FooterContainer>

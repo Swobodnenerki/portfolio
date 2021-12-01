@@ -1,7 +1,7 @@
 import React from 'react';
 import {TextContainer, ContactContainer, EmailContainer, HeaderContact, Divider2} from './ContactElements'
-import {Header, Spacer, Divider} from '../About/AboutElements'
-import '../../Styling/HomeStyle.css'
+import {Divider} from '../About/AboutElements'
+import './WavyFooterStyle.css'
 export const Contact = () => {
     return (
         <ContactContainer id="contact">
